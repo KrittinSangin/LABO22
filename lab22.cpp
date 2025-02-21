@@ -29,6 +29,19 @@ ComplexNumber ComplexNumber::operator-(const ComplexNumber &c){
 }
 
 //Write your code here
+ComplexNumber ComplexNumber::operator*(const ComplexNumber &c){
+	return ComplexNumber((real*c.real)+(-1)*(imag*c.imag),(real*c.imag)+(imag*c.real));
+}
+
+ComplexNumber ComplexNumber::operator/(const ComplexNumber &c){
+	return ComplexNumber((real*c.real)+(-1)*(imag*c.imag),(real*c.imag)+(imag*c.real));
+}
+
+ostream & operator<<(ostream & os, ComplexNumber &E){
+	return os << E.
+}
+
+
 
 int main(){
 	ComplexNumber a(1.5,2),b(3.2,-2.5),c(-1,1.2);	
